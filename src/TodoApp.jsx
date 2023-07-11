@@ -25,7 +25,7 @@ const preparedTodos = [
   },
 ];
 
-function App() {
+function TodoApp() {
   const [ counter, setCounter ] = useState(0);
   const [ todoInput, setTodoInput ] = useState('');
   const [ todos, setTodos ] = useState([...preparedTodos])
@@ -81,4 +81,4 @@ function App() {
   );
 }
 
-export default App;
+export default TodoApp;
