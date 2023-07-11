@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useParams } from 'react-router-dom';
 import Entry from './Entry.jsx';
 
 let nextId = 6;
@@ -50,7 +51,9 @@ function TodoApp() {
     setTodoInput('');
   }
 
-  const output = `${counter} clicks`;
+  const { todoId } = useParams();
+
+  const output = `${counter} clicks, todo Id: ${todoId}`;
 
   return (
     <>
